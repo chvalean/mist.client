@@ -45,7 +45,7 @@ def get_args():
     parser.add_argument('-B', '--backend-name', required=False, help='The name of the backend to use for the provisioning. Defaults to the first available backend', dest='backend_name', type=str)
     parser.add_argument('-I', '--image-id', required=True, help='The image to deploy', dest='image_id')
     parser.add_argument('-S', '--size-id', required=True, help='The id of the size/flavor to use', dest='size_id')
-	parser.add_argument('-N', '--networks', required=False, help='Network IDs to add to instance', dest='networks')
+    parser.add_argument('-N', '--networks', required=False, help='Network IDs to add to instance', dest='networks')
     parser.add_argument('-s', '--post-script', nargs=1, required=False, help='Script to be called after each VM is created and booted.', dest='post_script', type=str)
     parser.add_argument('-P', '--script-params', nargs=1, required=False, help='Script to be called after each VM is created and booted.', dest='script_params', type=str)
     parser.add_argument('-H', '--host', required=False, help='mist.io instance to connect to', dest='host', type=str, default='https://mist.io')

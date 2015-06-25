@@ -44,7 +44,7 @@ def get_args():
     parser.add_argument('-M', '--monitoring', required=False, help='Enable monitoring on the virtual machines', dest='monitoring', action='store_true')
     parser.add_argument('-B', '--backend-name', required=False, help='The name of the backend to use for the provisioning. Defaults to the first available backend', dest='backend_name', type=str)
     parser.add_argument('-I', '--image-id', required=True, help='The image to deploy', dest='image_id')
-    parser.add_argument('-I', '--tenant-id', required=True, help='Tenant under which to create the image', dest='tenant_id')
+    parser.add_argument('-T', '--tenant-id', required=True, help='Tenant under which to create the image', dest='tenant_id')
     parser.add_argument('-S', '--size-id', required=True, help='The id of the size/flavor to use', dest='size_id')
     parser.add_argument('-N', '--networks_id', required=False, help='Network IDs to add to instance', dest='networks')
     parser.add_argument('-s', '--post-script', nargs=1, required=False, help='Script to be called after each VM is created and booted.', dest='post_script', type=str)
